@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-body {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+/*make form length stretch to fill container*/
+input[type="text"] {
+  width: auto;
+}
