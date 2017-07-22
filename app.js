@@ -7,12 +7,15 @@
 //return password to input field after generated
 
 function generatePassword() {
-var passwordLength = document.getElementById("charNumber").value;
-var password = "";
+var passwordLength = document.getElementById("chars-number").value;
+var characters = "";
+var newPassword = "";
+
+document.getElementById("new-password").value = newPassword;
 }
 
 
 // how to copy input from form and copy to clipboard?
 function copyPassword() {
-
+var toBeCopied = document.getElementById("new-password").value;
 }
