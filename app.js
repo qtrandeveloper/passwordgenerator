@@ -12,5 +12,5 @@ document.output.newpassword.value = newPassword;
 
 
 function copyPassword() {
-var toBeCopied = document.getElementById("newpassword").value;
+var toBeCopied = document.output.newpassword.value;
 }
