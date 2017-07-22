@@ -3,6 +3,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.container {
+  display: block;
+  margin: auto;
+}
 
 .panel-body {
   display: flex;
@@ -11,6 +15,7 @@ body {
 }
 
 /*make form length stretch to fill container*/
-input[type="text"] {
-  width: auto;
+input {
+  width: 100%;
+  padding: 10px;
 }

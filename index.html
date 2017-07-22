@@ -16,9 +16,11 @@
     </div>
 
     <div class="panel-body">
-      <label>Number of characters: </label>
+      <label>Length of password: </label>
             <div class="input-group">
-              <input type="number" class="form-control" id="chars-number" aria-describedby="basic-addon3">
+              <form name="input">
+                <input type="number" class="form-control" name="charsnumber" aria-describedby="basic-addon3" placeholder="Enter number here">
+              </form>
             </div>
   <button type="button" class="btn btn-success" onclick="generatePassword()">Generate Password</button>
     </div>
@@ -26,7 +28,9 @@
     <div class="panel-body">
       <label>New password: </label>
             <div class="input-group">
-              <input type="text" class="form-control" id="new-password" aria-describedby="basic-addon3">
+              <form name="output">
+                <input type="text" class="form-control" name="newpassword" aria-describedby="basic-addon3">
+              </form>
             </div>
           <button type="button" class="btn btn-success" onclick="copyPassword()">Copy Password</button>
     </div>
