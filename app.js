@@ -1,3 +1,5 @@
+var button = document.getElementById("copy-button");
+
 function generatePassword() {
       var passwordLength = document.getElementById("charsnumber").value;
       var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -10,11 +12,6 @@ function generatePassword() {
 }
 
 
-
-
-
-var button = document.getElementById("copy-button");
-
 button.addEventListener("click", function() {
 
     // We will need a range object and a selection.
@@ -24,8 +21,8 @@ button.addEventListener("click", function() {
     // Clear selection from any previous data.
     selection.removeAllRanges();
 
-    // Make the range select the entire content of the contentHolder paragraph.
-    range.selectNodeContents(contentHolder);
+    // Make the range select the entire content of password
+    range.selectNodeContents(newPassword);
 
     // Add that range to the selection.
     selection.addRange(range);
