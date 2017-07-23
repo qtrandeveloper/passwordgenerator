@@ -5,6 +5,7 @@
     <title>Bootstrap Password Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
   </head>
   <body>
 
@@ -18,8 +19,8 @@
     <div class="panel-body">
       <label>Length of password:  </label>
             <div class="input-group">
-              <form name="input">
-                <input type="number" class="form-control" name="charsnumber" aria-describedby="basic-addon3" placeholder="Enter number here">
+              <form id="input">
+                <input type="number" class="form-control" id="charsnumber" aria-describedby="basic-addon3" placeholder="Enter number here">
               </form>
             </div>
   <button type="button" class="btn btn-success" onclick="generatePassword()">Generate Password</button>
@@ -28,8 +29,8 @@
     <div class="panel-body">
       <label>New password: </label>
             <div class="input-group">
-              <form name="output">
-                <input type="text" class="form-control" name="newpassword" aria-describedby="basic-addon3">
+              <form id="output">
+                <input type="text" class="form-control" id="newpassword" aria-describedby="basic-addon3">
               </form>
             </div>
           <button type="button" class="btn btn-success" onclick="copyPassword()">Copy Password</button>
