@@ -17,11 +17,7 @@ body {
    display: flex;
    -webkit-align-items: stretch;
    align-items: stretch;
-   -webkit-justify-content: space-between;
-   justify-content: space-between;
-   padding: 1em;
-}
-
-input {
-  width: 100%;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   padding: 2em;
 }
