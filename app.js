@@ -9,8 +9,8 @@ var newPassword = "";
 document.getElementById("newpassword").value = newPassword;
 }
 
-
-
 function copyPassword() {
 var toBeCopied = document.getElementById("newpassword").value;
+
+
 }

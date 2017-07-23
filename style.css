@@ -1,17 +1,9 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .panel-body {
   display: flex;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-/*make form length stretch to fill container*/
 input {
   width: 100%;
-  padding: 10px;
 }
