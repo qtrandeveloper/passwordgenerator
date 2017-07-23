@@ -6,20 +6,34 @@ function generatePassword() {
                    var rnum = Math.floor(Math.random() * chars.length);
       		     newPassword += chars.substring(rnum,rnum+1);
                   }
-      document.getElementById("newpassword").value = newPassword;
+      document.getElementById("new-password").value = newPassword;
 }
 
 
 
-function copyPassword() {
-      var toBeCopied = document.getElementById("newpassword").value; //sub newPassword
-      toBeCopied.focus();
-      toBeCopied.select();
-      document.execCommand('Copy');
-      if (document.selection) {
-      document.selection.empty();
-      }
-      else if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-      }
-    }
+
+
+var button = document.getElementById("copy-button");
+
+button.addEventListener("click", function() {
+
+    // We will need a range object and a selection.
+    var range = document.createRange(),
+        selection = window.getSelection();
+
+    // Clear selection from any previous data.
+    selection.removeAllRanges();
+
+    // Make the range select the entire content of the contentHolder paragraph.
+    range.selectNodeContents(contentHolder);
+
+    // Add that range to the selection.
+    selection.addRange(range);
+
+    // Copy the selection to clipboard.
+    document.execCommand('copy');
+
+    // Clear selection if you want to.
+    selection.removeAllRanges();
+
+}, false);
