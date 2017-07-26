@@ -1,23 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
 
 body {
-    font-family: 'Zilla Slab', serif, sans-serif;
-    font-size: 25px;
+    font-family: Courier, serif, sans-serif;
+    font-size: 2em;
     font-weight: bold;
     display: -webkit-flex;
+    display: -moz-flex;
     display: flex;
     -webkit-align-items: center;
+    -moz-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
+    background-color: black;
+    color: rgb(45, 250, 2);
 }
 
-.panel-body {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-align-items: stretch;
-   align-items: stretch;
-   -webkit-justify-content: space-around;
-   justify-content: space-around;
-   padding: 2em;
+#wrapper {
+    border: 2px solid rgb(142, 149, 146);
+    padding: 20px;
+    text-align: center;
+    padding: 1em;
+}
+
+input {
+  border: 2px solid rgb(142, 149, 146);
+  background-color: inherit;
+  color: inherit;
+  width: 100%;
+  height: 30px;
+  margin: 0.8em;
+  font-size: 0.3em;
+}
+
+button {
+  border: 2px solid rgb(142, 149, 146);
+  background-color: inherit;
+  color: inherit;
+  font-size: 0.4em;
+  font-family: inherit;
+  font-weight: inherit;
 }
