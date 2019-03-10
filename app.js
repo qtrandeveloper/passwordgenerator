@@ -1,13 +1,18 @@
 var button = document.getElementById("copy-button");
 
 function generatePassword() {
-      var passwordLength = document.getElementById("charsnumber").value;
+      var passwordLength = document.getElementById("number").value;
       var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-      var newPassword = "";
+		if (passwordLength < 5) {
+		document.getElementById("number").value = "Your password needs to be longer";
+	} 
+	else {
+		      var newPassword = "";
               for (var i = 0; i < passwordLength; i++) {
                    var rnum = Math.floor(Math.random() * chars.length);
       		     newPassword += chars.substring(rnum,rnum+1);
                   }
+	}
       document.getElementById("new-password").value = newPassword;
 }
 
@@ -22,7 +27,7 @@ button.addEventListener("click", function() {
     selection.removeAllRanges();
 
     // Make the range select the entire content of password
-    range.selectNodeContents(newPassword);
+    range.selectNodeContents();
 
     // Add that range to the selection.
     selection.addRange(range);
@@ -33,4 +38,4 @@ button.addEventListener("click", function() {
     // Clear selection if you want to.
     selection.removeAllRanges();
 
-}, false);
+}, true);

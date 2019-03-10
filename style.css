@@ -1,43 +1,43 @@
 body {
-    font-family: Courier, serif, sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    background-color: black;
-    color: rgb(45, 250, 2);
-    min-height:100vh;
+  font-family: Courier, serif, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(45, 250, 2);
+  height:100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background-color: black;
 }
 
 #wrapper {
-    border: 2px solid rgb(142, 149, 146);
-    padding: 20px;
-    text-align: center;
-    padding: 1em;
+  border: 3px solid rgb(142, 149, 146);
+  text-align: center;
+   padding: 2em;
 }
 
 input {
-  border: 2px solid rgb(142, 149, 146);
-  background-color: inherit;
-  color: inherit;
-  width: 100%;
-  height: 30px;
-  margin: 0.8em;
-  font-size: 0.3em;
+border: 3px solid rgb(142, 149, 146);
+background-color: inherit;
+color: inherit;
+width: 100%;
+height: 2.5em;
+margin: 1.5em auto;
+text-align: center;
 }
 
 button {
-  border: 2px solid rgb(142, 149, 146);
-  background-color: inherit;
-  color: inherit;
-  font-size: 0.4em;
-  font-family: inherit;
-  font-weight: inherit;
+background-color: inherit;
+color: inherit;
+font-size: 0.7em;
+font-family: inherit;
+font-weight: inherit;
+padding: 0.5em;
+margin: 1.0em;
 }
