@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Password Generator</title>
+    <title>JS Password Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
   </head>
@@ -12,14 +12,14 @@
     <div id="wrapper">
       <label>Password length</label>
         <form id="input">
-    <input type="text" class="form-control" id="charsnumber">
-    <button type="button" class="btn btn-success" onclick="generatePassword()">Generate Password</button>
+    <input type="text" id="chars-number">
+    <button type="button" id="gen-pass">Generate Password</button>
         </form>
 
       <label>New password</label>
             <form id="output">
-      <input type="text" class="form-control" id="new-password">
-      <button type="button" class="btn btn-success" id="copy-button" onclick="copyPassword()">Copy Password</button>
+      <input type="text" id="new-password">
+      <button type="button" id="copy-button">Copy Password</button>
             </form>
       </div>
   </body>
